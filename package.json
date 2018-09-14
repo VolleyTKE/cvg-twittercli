@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/VolleyTKE/cvg-twittercli/issues"
   },
-  "homepage": "https://github.com/VolleyTKE/cvg-twittercli#readme"
+  "homepage": "https://github.com/VolleyTKE/cvg-twittercli#readme",
+  "dependencies": {
+    "configstore": "^4.0.0",
+    "inquirer": "^6.2.0"
+  }
 }
