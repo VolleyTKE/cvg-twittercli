@@ -1,0 +1,19 @@
+{
+  "name": "cvg-twittercli",
+  "version": "1.0.0",
+  "description": "cli with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VolleyTKE/cvg-twittercli.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VolleyTKE/cvg-twittercli/issues"
+  },
+  "homepage": "https://github.com/VolleyTKE/cvg-twittercli#readme"
+}
