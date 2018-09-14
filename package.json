@@ -2,6 +2,9 @@
   "name": "cvg-twittercli",
   "version": "1.0.0",
   "description": "cli with nodejs",
+  "bin": {
+    "twittercli": "./bin/twittercli.js"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
