@@ -21,7 +21,8 @@
   "homepage": "https://github.com/VolleyTKE/cvg-twittercli#readme",
   "dependencies": {
     "configstore": "^4.0.0",
-    "inquirer": "^6.2.0"
+    "inquirer": "^6.2.0",
+    "keytar-prebuild": "^4.1.1"
   },
   "devDependencies": {
     "chai": "^4.1.2",
