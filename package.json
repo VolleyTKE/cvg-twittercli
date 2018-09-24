@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/VolleyTKE/cvg-twittercli#readme",
   "dependencies": {
+    "commander": "^2.18.0",
     "configstore": "^4.0.0",
     "inquirer": "^6.2.0",
     "keytar-prebuild": "^4.1.1"
