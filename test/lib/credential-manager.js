@@ -13,7 +13,7 @@ chai.use(dirtyChai)
 describe('a credential manager', () => {
     var creds
     before(() => {
-        creds = new CredentialManager('twcli-test')
+        creds = new CredentialManager('twittercli-test')
     })
     it('should return credentials when they are found', async () => {
         await creds.storeKeyAndSecret('foo', 'bar')
@@ -26,6 +26,6 @@ describe('a credential manager', () => {
         expect(creds.getKeyAndSecret()).to.be.rejected()
     })
     after((done) => {
-        fs.unlink(path.join(process.env.HOME, '.config', 'configstore', 'twine-test.json'), done)
+        fs.unlink(path.join(process.env.HOME, '.config', 'configstore', 'twittercli.json'), done)
     })
 })
