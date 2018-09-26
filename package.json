@@ -25,7 +25,8 @@
     "configstore": "^4.0.0",
     "inquirer": "^6.2.0",
     "keytar-prebuild": "^4.1.1",
-    "oauth-1.0a": "^2.2.4"
+    "oauth-1.0a": "^2.2.4",
+    "opn": "^5.4.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
