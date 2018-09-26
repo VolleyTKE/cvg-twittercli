@@ -10,20 +10,20 @@ const CredentialManager = require('../../lib/credential-manager')
 chai.use(chaiAsPromised)
 chai.use(dirtyChai)
 
-describe('a credential manager', () => {
+describe('the credential manager', () => {
     var creds
     before(() => {
         creds = new CredentialManager('twittercli-test')
     })
     it('should return credentials when they are found', async () => {
-        await creds.storeKeyAndSecret('foo', 'bar')
-        let [key, secret] = await creds.getKeyAndSecret()
+        await creds.storeKeyAndSecret('apiKey', 'foo', 'bar')
+        let [key, secret] = await creds.getKeyAndSecret('apiKey')
         expect(key).to.equal('foo')
         expect(secret).to.equal('bar')
     })
     it('should reject when no credentials are found', async () => {
-        await creds.clearKeyAndSecret()
-        expect(creds.getKeyAndSecret()).to.be.rejected()
+        await creds.clearKeyAndSecret('apiKey')
+        expect(creds.getKeyAndSecret('apiKey')).to.be.rejected()
     })
     after((done) => {
         fs.unlink(path.join(process.env.HOME, '.config', 'configstore', 'twittercli-test.json'), done)
