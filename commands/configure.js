@@ -9,7 +9,7 @@ const configure = {
             {type: 'input', name: 'key', message: 'Enter your API Key', validate: util.notEmpty},
             {type: 'password', name: 'secret', message: 'Enter your API Secret', validate: util.notEmpty}
         ])
-        await creds.storeKeyAndSecret(answer.key, answers.secret)
+        await creds.storeKeyAndSecret(answers.key, answers.secret)
     }
 }
 
