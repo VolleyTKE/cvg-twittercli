@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
 const program = require('commander')
-const pkg = require('../package.json')
+const pkg = require('../package.json') //handy way to get access to info about project... Like version
 
 program
     .version(pkg.version)

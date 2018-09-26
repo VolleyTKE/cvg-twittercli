@@ -26,6 +26,6 @@ describe('a credential manager', () => {
         expect(creds.getKeyAndSecret()).to.be.rejected()
     })
     after((done) => {
-        fs.unlink(path.join(process.env.HOME, '.config', 'configstore', 'twittercli.json'), done)
+        fs.unlink(path.join(process.env.HOME, '.config', 'configstore', 'twittercli-test.json'), done)
     })
 })
