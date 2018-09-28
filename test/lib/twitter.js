@@ -7,6 +7,13 @@ const Twitter = require('../../lib/twitter')
 
 chai.use(dirtyChai)
 
+//Perhaps a few more tests to up the coverage
+// File                  |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+// twitter.js            |    77.78 |      100 |    66.67 |    77.78 |       16,20,25,26 |
+// util.js               |    83.33 |      100 |       50 |      100 |                   |
+
+
+
 describe('the twitter module', () => {
     var twitter
     before(() => {
