@@ -11,11 +11,11 @@ const configure = {
             {type: 'input', name: 'key', message: 'Enter your API Key', validate: util.notEmpty},
             {type: 'password', name: 'secret', message: 'Enter your API Secret', validate: util.notEmpty}
         ])
-        await creds.storeKeyAndSecret('apiKey', answers.key, answers.secret)
+        await creds.storeKeyAndSecret('consumer', answers.key, answers.secret)
     }, 
     async account (name) {
         let creds = new CredentialManager(name)
-        var [apiKey, apiSecret] = await creds.getKeyAndSecret('apiKey')
+        var [apiKey, apiSecret] = await creds.getKeyAndSecret('consumer')
         let twitter = new Twitter(apiKey, apiSecret)
         console.log(twitter)
         let response = querystring.parse(await twitter.post('oauth/request_token'))
@@ -41,7 +41,7 @@ const configure = {
 
         let verifyResponse = await twitter.get('1.1/account/verify_credentials.json')
         await creds.storeKeyAndSecret(
-            'accountToken',
+            'account',
             tokenResponse['oauth_token'],
             tokenResponse["oauth_token_secret"]
         )
