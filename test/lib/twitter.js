@@ -50,7 +50,7 @@ describe('the twitter module', () => {
         sinon.stub(axios, 'post').rejects(new Error('429'))
         await expect(twitter.post('/api', 'stuff')).to.be.rejectedWith('Twitter rate limit reached')
         axios.post.restore()
-        sinon.stub(axios,'get').rejects(new Error('429'))
+        sinon.stub(axios, 'get').rejects(new Error('429'))
         await expect(twitter.post('/api')).to.be.rejectedWith('Twitter rate limit reached')
         axios.get.restore()
     })
