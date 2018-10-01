@@ -1,4 +1,9 @@
 # cvg-twittercli
+
+This is part of tutorial I followed, I will be making my own application in the future, 
+
+https://github.com/pofallon/twine
+
 cli with nodejs
 
 For building node command line apps
